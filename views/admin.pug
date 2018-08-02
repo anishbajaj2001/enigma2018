@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  
+  section#main.grey
+    .container
+      .twelve.columns
+        .card.mono.form
+          if error
+            p.error= error
+          a(href='/add-question')
+            button.cta#results-button Add questions
+          a(href='/questions')
+            button.cta#results-button Manage questions
+          a(href='/teams')
+            button.cta#manual-button Manage teams
+          a(href='/disqualify')
+            button.cta#dq-button Disqualify team
+          a(href='/logs')
+            button.cta#dq-button View logs

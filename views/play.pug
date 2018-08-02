@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1.title Enigma 2018
+  .card.question-card
+    if error
+      p.error= error
+    if isOver
+      img(src='https://i.imgflip.com/2efijx.jpg', alt='Tum jeet gayye!', class='end')
+    else
+      p
+        span.userLevel Level #{currentUser.level}:
+        span.question #{question}
+      form(method='post', action='play')
+        input(type='text', placeholder='Press enter to submit', name='answer', maxlength='30', id="answer", required)
+  p.credits Designed &amp; developed by 
+    a(href='https://minet.co') MINET

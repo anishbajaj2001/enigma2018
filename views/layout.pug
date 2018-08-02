@@ -1,0 +1,27 @@
+doctype html(lang='en')
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(http-equiv='x-ua-compatible', content='ie=edge')
+  title Enigma &middot; #{title}
+  link(rel='stylesheet', href='/css/style.css')
+  link(rel='icon', type='image/png' href='/img/icon.png')
+  meta(name='theme-color', content='#f5f5f5')
+  script(type="text/javascript", src='/js/script.js')
+
+  if isLogs
+    meta(http-equiv="refresh" content="20;url=/logs")
+body
+  
+  include header
+  
+  section#main
+    .container
+      block content
+        
+  include footer
+  
+  
+
+      
+  

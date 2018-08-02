@@ -1,1 +1,2 @@
-# enigma2018
+# enigma
+A web-app for an online hunt
